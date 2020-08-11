@@ -1,0 +1,125 @@
+page{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.navbar{
+  flex: none;
+  display: flex;
+  background: #fff;
+  color: #F3632E ;
+}
+.navbar .item{
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 80rpx;
+}
+.navbar .item.active:after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  right: 0;
+  height: 5rpx;
+  width: 80%;
+  background: #F3632E ;
+  animation-name: line01;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+}
+.tabbar1{
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+}
+.image_R{
+  position: relative;  
+  left: 10%;
+  top: 15px;
+  width: 80%;
+  height: 430px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.btnU{
+  font-size: 15px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 20px;
+  margin: 3px;
+  font-weight: 700;
+  position: relative;
+  top: -55px;
+  left: 10%;
+  overflow: hidden;
+}
+.btnU::after{
+  border: none;
+}
+.btnU0{
+  width: 144px;
+}
+.btnTurnW{
+  width: 300px;
+  animation-name: btn01;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+}
+.btn1{
+  border: solid #F3632E 2px;
+  color: #F3632E;
+}
+.btn2{
+  border: solid #F3632E 2px;
+  background-color: #F3632E;
+  color: white;
+}
+swiper{
+  width: 375px;
+  height: 515px;
+}
+.attractionsName{
+  width: 50%;
+  position: relative;  
+  left: 20%;
+  top:-45px;
+  color: white;
+  font-size: 23px;
+}
+.clickLike{
+  position: relative;  
+  left: 70%;
+  top: -80px;
+  width:40px;
+  height: 40px;
+  border-radius: 20px;
+}
+@keyframes line01
+{
+  from{
+    left: 50%;
+    width: 0;
+  }
+  to{
+    left: 10%;
+    width: 80%;
+  }
+}
+@keyframes btn01
+{
+  0%{
+    width: 144px;
+    color: #F4F5F6;
+  }
+  50%{
+    color: #F4F5F6;
+  }
+  100%{
+    width: 300px;
+    color: #F3632E;
+  }
+}

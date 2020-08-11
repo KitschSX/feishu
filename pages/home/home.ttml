@@ -1,0 +1,55 @@
+<navbar showNav="false" page-name="今天玩啥"></navbar>
+<!--导航条-->
+<view class="navbar">
+  <text tt:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" tt:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+
+<swiper current="{{currentTab}}" duration="400" bindchange="swiperChange"> 
+
+<!--随便-->
+<swiper-item>
+<swiper current="{{currentTab1}}" duration="400" bindchange="swiperChange1">   
+<swiper-item class="tabbar1">
+  <image src="../../images/1.jpg" class="image_R" mode="aspectFill"/>
+  <view class="attractionsName">成都欢乐谷</view>
+  <image data-val="0" src="../../images/heart1.png" tt:if="{{likeVal[0]}}" catchtap="clickLike" class="clickLike"/>
+  <image data-val="0" src="../../images/heart0.png" tt:else catchtap="clickLike" class="clickLike"/>
+</swiper-item>
+<swiper-item class="tabbar1">
+  <image src="../../images/5.jpg" class="image_R"  mode="aspectFill"/>
+  <view class="attractionsName">五台山</view>
+  <image data-val="1" src="../../images/heart1.png" tt:if="{{likeVal[1]}}" catchtap="clickLike" class="clickLike"/>
+  <image data-val="1" src="../../images/heart0.png" tt:else catchtap="clickLike" class="clickLike"/>
+</swiper-item>
+<swiper-item class="tabbar1">
+  <image src="../../images/3.png" class="image_R"  mode="aspectFill"/>
+  <view class="attractionsName">山西平遥古镇</view>
+  <image data-val="2" src="../../images/heart1.png" tt:if="{{likeVal[2]}}" catchtap="clickLike" class="clickLike"/>
+  <image data-val="2" src="../../images/heart0.png" tt:else catchtap="clickLike" class="clickLike"/>
+</swiper-item>
+</swiper>
+  <button class="btnU btn1 {{choose==false ? 'btnTurnW' : 'btnU0'}}" catchtap="clickNext">{{btnVal[0]}}</button>
+  <button class="btnU btn2 btnU0" catchtap="clickOk" tt:if="{{choose}}" >{{btnVal[1]}}</button>
+</swiper-item>
+
+<!--景点-->
+<swiper-item>
+  <view>1</view>
+</swiper-item> 
+
+<!--美食-->
+<swiper-item>
+  tab_03
+</swiper-item>
+
+<!--伙伴-->
+<swiper-item>
+  tab_04
+</swiper-item>
+
+<!--住宿-->
+<swiper-item>
+  tab_05
+</swiper-item>
+
+</swiper> 

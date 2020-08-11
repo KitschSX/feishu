@@ -1,0 +1,14 @@
+.btn{
+  font-size: 15px;
+  height: 40px;
+  width: 50%;
+  border-radius: 20px;
+  margin: 3px;
+  font-weight: 700;
+  border: solid #F3632E 2px;
+  color: #F3632E;
+  left: 25%;
+}
+.btn::after{
+  border: none;
+}

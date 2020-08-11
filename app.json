@@ -1,0 +1,28 @@
+{
+  "pages": [
+    "pages/mine/mine",
+    "pages/home/home",
+
+    "pages/partner/partner"
+  ],
+  "window": {
+    "navigationStyle":"custom"
+  },
+    "tabBar": {
+    "selectedColor": "#067c8",
+    "color": "#afafaf",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "iconPath": "images/home1.png",
+      "selectedIconPath": "images/home0.png"
+    },{
+      "pagePath": "pages/partner/partner",
+      "iconPath": "images/find1.png",
+      "selectedIconPath": "images/find0.png"
+    },{
+      "pagePath": "pages/mine/mine",
+      "iconPath": "images/user1.png",
+      "selectedIconPath": "images/user0.png"
+    }]
+  }
+}
