@@ -1,4 +1,4 @@
-<navbar showNav="false" page-name="今天玩啥"></navbar>
+<navbar showSearch="true" page-name="今天玩啥"></navbar>
 <!--导航条-->
 <view class="navbar">
   <text tt:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" tt:key="unique" bindtap="navbarTap">{{item}}</text>

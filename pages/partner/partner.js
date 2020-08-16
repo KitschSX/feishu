@@ -9,7 +9,8 @@ Page({
     word: '',
     message:''
   },
-  houduanButton1: function () {  tt.login({
+  houduanButton1: function () {
+    tt.login({
     success (res) {
       console.log('code',res);
       var code = res.code;

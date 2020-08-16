@@ -1,1 +1,11 @@
-<navbar showNav="false" page-name="我"></navbar>
+<navbar pageName="我"></navbar>
+<view class="user">
+  <view class="avatar flex-item">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+  </view>
+  <view class="user-info flex-item">
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>   
+    <button class="btn">摄影达人</button>
+  </view>
+</view>
+<view></view>

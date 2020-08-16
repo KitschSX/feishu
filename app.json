@@ -1,9 +1,10 @@
 {
   "pages": [
-    "pages/mine/mine",
+    "pages/search/search",
     "pages/home/home",
+    "pages/partner/partner",
+    "pages/mine/mine"
 
-    "pages/partner/partner"
   ],
   "window": {
     "navigationStyle":"custom"
